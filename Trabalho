@@ -1,8 +1,6 @@
 package com.example.smarttask;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 
@@ -27,9 +25,22 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         btnListar.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, CadastroActivity.class);
+            Intent intent = new Intent(MainActivity.this, ListaActivity.class);
             startActivity(intent);
         });
+        btnCompartilhar.setOnClickListener(v -> {
+
+        });
+
+        btnAnalise.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AnaliseActivity.class);
+            startActivity(intent);
+        });
+        btnSobre.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SobreActivity.class);
+            startActivity(intent);
+        });
+
 
     }
 }
